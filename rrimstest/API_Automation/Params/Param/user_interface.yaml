@@ -1,0 +1,103 @@
+---
+user_interface:
+  dec: "用户管理"
+  addUser:
+    # 添加用户
+    - url: /admin/userAction_addUser.action
+      data: {
+              "userInfo.userId":"python用户",
+              "userInfo.userName":"python站长",
+              "userInfo.sex":"0",
+              "userInfo.comId":"100006",
+              "userInfo.tel":"",
+              "userInfo.email":""
+      }
+      header: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  findUser:
+    # 查询用户
+    - url: /admin/userAction_findUserByPage.action
+      data: {
+              "userInfo.searchName":"userName",
+              "userInfo.searchValue":"",
+              "userInfo.state":"1",
+              "page":"1",
+              "rows":"15",
+              "sort":"userId",
+              "order":"asc"
+      }
+      header: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  updateUserHas:
+    # 用户授权
+    - url: /admin/userAction_updateUserHasGroup.action
+      data: {
+              "userInfo.userId":"",
+              "userInfo.groupIds":"15,10"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  editUser:
+    # 编辑用户
+    - url: /admin/userAction_updateUser.action
+      data: {
+              "userInfo.userId":"",
+              "userInfo.userName":"",
+              "userInfo.sex":"0",
+              "userInfo.comId":"100006",
+              "userInfo.tel":"",
+              "userInfo.email":"",
+              "userInfo.state":"1"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  resetPasswordUser:
+    # 用户重置密码
+    - url: /admin/userAction_resetPassword.action?userInfo.userId=
+      data: {
+              "userInfo.userId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  unLockUser:
+    # 用户解锁
+    - url: /admin/userAction_unLockUser.action?userInfo.userId=
+      data: {
+              "userInfo.userId":""
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  disableUser:
+    # 禁用用户
+    - url: /admin/userAction_updateUser.action
+      data: {
+              "userInfo.userId":"",
+              "userInfo.userName":"",
+              "userInfo.sex":"0",
+              "userInfo.comId":"100006",
+              "userInfo.tel":"",
+              "userInfo.email":"",
+              "userInfo.state":"0"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }

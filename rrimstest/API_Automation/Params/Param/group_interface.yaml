@@ -1,0 +1,68 @@
+---
+group_interface:
+  dec: "用户组管理"
+  addGroup:
+    # 添加用户组
+    - url: /admin/groupAction_addGroup.action
+      data: {
+              "groupInfo.groupName":"python用户组"
+      }
+      header: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+
+  findGroup:
+    # 查询用户组
+    - url: /admin/groupAction_findGroupByPage.action
+      data: {
+              "groupInfo.searchName":"groupName",
+              "groupInfo.searchValue":"",
+              "page":"1",
+              "rows":"15",
+              "sort":"groupId",
+              "order":"asc"
+      }
+      header: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  updateGroupMenu:
+    # 用户组授权
+    - url: /admin/groupAction_updateGroupMenu.action
+      data: {
+              "groupInfo.groupId":"",
+              "groupInfo.menuPermissions":"120000_query,120011_query"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  editGroup:
+    # 编辑用户组
+    - url: /admin/groupAction_updateGroup.action
+      data: {
+              "groupInfo.groupId":"",
+              "groupInfo.groupName":"",
+              "groupInfo.state":"1"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  disableGroup:
+    # 禁用用户组
+    - url: /admin/groupAction_updateGroup.action
+      data: {
+              "groupInfo.groupId":"",
+              "groupInfo.groupName":"",
+              "groupInfo.state":"0"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }

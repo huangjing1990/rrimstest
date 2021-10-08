@@ -1,0 +1,108 @@
+[2021-09-30 14:00:23.166422] INFO: LOGINFO: 日志路径; D:\rrimstest\API_Automation\Log
+[2021-09-30 14:00:23.167411] INFO: LOGINFO: D:\rrimstest\API_Automation\TestCase
+[2021-09-30 14:00:23.167411] INFO: LOGINFO: test_user.py
+[2021-09-30 14:00:23.304805] INFO: LOGINFO: <unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<test_user.TestUser testMethod=test_0001_adduser>, <test_user.TestUser testMethod=test_0002_finduser>, <test_user.TestUser testMethod=test_0003_edituserHas>, <test_user.TestUser testMethod=test_0004_edituser>, <test_user.TestUser testMethod=test_0005_editresetPassworduser>, <test_user.TestUser testMethod=test_0006_editunLockuser>, <test_user.TestUser testMethod=test_0007_disableuser>]>]>]>
+[2021-09-30 14:00:23.314880] INFO: LOGINFO: ********TEST START********
+[2021-09-30 14:00:23.316808] INFO: LOGINFO: 报告路径; D:\rrimstest\API_Automation\report\report_20210930_140023.html
+[2021-09-30 14:00:23.318844] INFO: LOGINFO: 解析yaml, Path:D:\rrimstest\API_Automation/Params/Param/login_interface
+[2021-09-30 14:00:23.350932] INFO: LOGINFO: 当前模块 post_request
+[2021-09-30 14:00:23.350932] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/loginAction_login.action
+[2021-09-30 14:00:23.350932] INFO: LOGINFO: 请求入参：{'userName': 'cqhj', 'passwordLocal': 'cs2021', 'verifyCode': '', 'verify': '0', 'localVertifyCode': '', 'password': 'DB1A8BD798EEA81B0BE3DCA1D0E2C309', 'loginFailedNum': '', 'searchCount': '0'}
+[2021-09-30 14:00:23.350932] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-09-30 14:00:23.605760] INFO: LOGINFO: 当前模块 状态码断言
+[2021-09-30 14:00:23.606762] INFO: LOGINFO:  statusCode is 302 
+[2021-09-30 14:00:23.606762] INFO: LOGINFO: response.status_code：302
+[2021-09-30 14:00:23.606762] INFO: LOGINFO: http://192.168.10.99:7070/loginAction_login.action: 返回结果：
+[2021-09-30 14:00:23.606762] INFO: LOGINFO: 当前模块 状态码断言
+[2021-09-30 14:00:23.606762] INFO: LOGINFO:  statusCode is 302 
+[2021-09-30 14:00:23.606762] INFO: LOGINFO: 测试用例开始执行
+[2021-09-30 14:00:23.606762] INFO: LOGINFO: 当前模块 添加用户
+[2021-09-30 14:00:23.607765] INFO: LOGINFO: 解析yaml, Path:D:\rrimstest\API_Automation/Params/Param/user_interface
+[2021-09-30 14:00:23.634868] INFO: LOGINFO: 当前模块 post_request
+[2021-09-30 14:00:23.634868] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/userAction_addUser.action
+[2021-09-30 14:00:23.634868] INFO: LOGINFO: 请求入参：{'userInfo.userId': 'python用户747', 'userInfo.userName': 'python站长', 'userInfo.sex': '0', 'userInfo.comId': '100006', 'userInfo.tel': '', 'userInfo.email': ''}
+[2021-09-30 14:00:23.634868] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-09-30 14:00:23.786321] INFO: LOGINFO: 当前模块 状态码断言
+[2021-09-30 14:00:23.786321] INFO: LOGINFO:  statusCode is 200 
+[2021-09-30 14:00:23.786321] INFO: LOGINFO: response.status_code：200
+[2021-09-30 14:00:23.786321] INFO: LOGINFO: http://192.168.10.99:7070/admin/userAction_addUser.action: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-09-30 14:00:23.786321] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-09-30 14:00:23.786321] INFO: LOGINFO:  body_msg is 1 
+[2021-09-30 14:00:23.786321] INFO: LOGINFO: 测试用例执行完毕
+[2021-09-30 14:00:23.787323] INFO: LOGINFO: 当前模块 查询用户
+[2021-09-30 14:00:23.787323] INFO: LOGINFO: 解析yaml, Path:D:\rrimstest\API_Automation/Params/Param/user_interface
+[2021-09-30 14:00:23.814396] INFO: LOGINFO: 当前模块 post_request
+[2021-09-30 14:00:23.815400] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/userAction_findUserByPage.action
+[2021-09-30 14:00:23.815400] INFO: LOGINFO: 请求入参：{'userInfo.searchName': 'userName', 'userInfo.searchValue': 'python站长', 'userInfo.state': '1', 'page': '1', 'rows': '15', 'sort': 'userId', 'order': 'asc'}
+[2021-09-30 14:00:23.815400] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-09-30 14:00:23.982001] INFO: LOGINFO: 当前模块 状态码断言
+[2021-09-30 14:00:23.982001] INFO: LOGINFO:  statusCode is 200 
+[2021-09-30 14:00:23.982001] INFO: LOGINFO: response.status_code：200
+[2021-09-30 14:00:23.982001] INFO: LOGINFO: 当前模块 验证response body中是否包含预期字符串
+[2021-09-30 14:00:23.983004] INFO: LOGINFO: 测试用例执行完毕
+[2021-09-30 14:00:23.983004] INFO: LOGINFO: 当前模块 用户授权
+[2021-09-30 14:00:23.983004] INFO: LOGINFO: 解析yaml, Path:D:\rrimstest\API_Automation/Params/Param/user_interface
+[2021-09-30 14:00:24.010105] INFO: LOGINFO: 当前模块 post_request
+[2021-09-30 14:00:24.010105] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/userAction_updateUserHasGroup.action
+[2021-09-30 14:00:24.010105] INFO: LOGINFO: 请求入参：{'userInfo.userId': 'python用户747', 'userInfo.groupIds': '15,10'}
+[2021-09-30 14:00:24.010105] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-09-30 14:00:24.161219] INFO: LOGINFO: 当前模块 状态码断言
+[2021-09-30 14:00:24.161219] INFO: LOGINFO:  statusCode is 200 
+[2021-09-30 14:00:24.162222] INFO: LOGINFO: response.status_code：200
+[2021-09-30 14:00:24.162222] INFO: LOGINFO: http://192.168.10.99:7070/admin/userAction_updateUserHasGroup.action: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-09-30 14:00:24.162222] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-09-30 14:00:24.162222] INFO: LOGINFO:  body_msg is 1 
+[2021-09-30 14:00:24.163224] INFO: LOGINFO: 测试用例执行完毕
+[2021-09-30 14:00:24.163224] INFO: LOGINFO: 当前模块 编辑用户
+[2021-09-30 14:00:24.163224] INFO: LOGINFO: 解析yaml, Path:D:\rrimstest\API_Automation/Params/Param/user_interface
+[2021-09-30 14:00:24.193336] INFO: LOGINFO: 当前模块 post_request
+[2021-09-30 14:00:24.193336] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/userAction_updateUser.action
+[2021-09-30 14:00:24.193336] INFO: LOGINFO: 请求入参：{'userInfo.userId': 'python用户747', 'userInfo.userName': '编辑python站长', 'userInfo.sex': '0', 'userInfo.comId': '100006', 'userInfo.tel': '', 'userInfo.email': '', 'userInfo.state': '1'}
+[2021-09-30 14:00:24.194335] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-09-30 14:00:24.338575] INFO: LOGINFO: 当前模块 状态码断言
+[2021-09-30 14:00:24.339398] INFO: LOGINFO:  statusCode is 200 
+[2021-09-30 14:00:24.339398] INFO: LOGINFO: response.status_code：200
+[2021-09-30 14:00:24.339398] INFO: LOGINFO: http://192.168.10.99:7070/admin/userAction_updateUser.action: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '修改成功！', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-09-30 14:00:24.339398] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-09-30 14:00:24.339398] INFO: LOGINFO:  body_msg is 1 
+[2021-09-30 14:00:24.339398] INFO: LOGINFO: 测试用例执行完毕
+[2021-09-30 14:00:24.339398] INFO: LOGINFO: 当前模块 用户重置密码
+[2021-09-30 14:00:24.339398] INFO: LOGINFO: 解析yaml, Path:D:\rrimstest\API_Automation/Params/Param/user_interface
+[2021-09-30 14:00:24.367500] INFO: LOGINFO: 当前模块 post_request
+[2021-09-30 14:00:24.367500] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/userAction_updateUser.action
+[2021-09-30 14:00:24.367500] INFO: LOGINFO: 请求入参：{'userInfo.userId': 'python用户747', 'userInfo.userName': '编辑python站长', 'userInfo.sex': '0', 'userInfo.comId': '100006', 'userInfo.tel': '', 'userInfo.email': '', 'userInfo.state': '1'}
+[2021-09-30 14:00:24.368503] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-09-30 14:00:24.507780] INFO: LOGINFO: 当前模块 状态码断言
+[2021-09-30 14:00:24.507780] INFO: LOGINFO:  statusCode is 200 
+[2021-09-30 14:00:24.507780] INFO: LOGINFO: response.status_code：200
+[2021-09-30 14:00:24.508782] INFO: LOGINFO: http://192.168.10.99:7070/admin/userAction_updateUser.action: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '修改成功！', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-09-30 14:00:24.508782] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-09-30 14:00:24.508782] INFO: LOGINFO:  body_msg is 1 
+[2021-09-30 14:00:24.508782] INFO: LOGINFO: 测试用例执行完毕
+[2021-09-30 14:00:24.508782] INFO: LOGINFO: 当前模块 用户解锁
+[2021-09-30 14:00:24.508782] INFO: LOGINFO: 解析yaml, Path:D:\rrimstest\API_Automation/Params/Param/user_interface
+[2021-09-30 14:00:24.537859] INFO: LOGINFO: 当前模块 post_request
+[2021-09-30 14:00:24.537859] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/userAction_updateUser.action
+[2021-09-30 14:00:24.537859] INFO: LOGINFO: 请求入参：{'userInfo.userId': 'python用户747', 'userInfo.userName': '编辑python站长', 'userInfo.sex': '0', 'userInfo.comId': '100006', 'userInfo.tel': '', 'userInfo.email': '', 'userInfo.state': '1'}
+[2021-09-30 14:00:24.537859] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-09-30 14:00:24.676510] INFO: LOGINFO: 当前模块 状态码断言
+[2021-09-30 14:00:24.676510] INFO: LOGINFO:  statusCode is 200 
+[2021-09-30 14:00:24.676510] INFO: LOGINFO: response.status_code：200
+[2021-09-30 14:00:24.677507] INFO: LOGINFO: http://192.168.10.99:7070/admin/userAction_updateUser.action: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '修改成功！', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-09-30 14:00:24.677507] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-09-30 14:00:24.677507] INFO: LOGINFO:  body_msg is 1 
+[2021-09-30 14:00:24.677507] INFO: LOGINFO: 测试用例执行完毕
+[2021-09-30 14:00:24.677507] INFO: LOGINFO: 当前模块 禁用用户
+[2021-09-30 14:00:24.677507] INFO: LOGINFO: 解析yaml, Path:D:\rrimstest\API_Automation/Params/Param/user_interface
+[2021-09-30 14:00:24.705584] INFO: LOGINFO: 当前模块 post_request
+[2021-09-30 14:00:24.705584] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/userAction_updateUser.action
+[2021-09-30 14:00:24.705584] INFO: LOGINFO: 请求入参：{'userInfo.userId': 'python用户747', 'userInfo.userName': '编辑python站长', 'userInfo.sex': '0', 'userInfo.comId': '100006', 'userInfo.tel': '', 'userInfo.email': '', 'userInfo.state': '0'}
+[2021-09-30 14:00:24.705584] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-09-30 14:00:24.841690] INFO: LOGINFO: 当前模块 状态码断言
+[2021-09-30 14:00:24.841690] INFO: LOGINFO:  statusCode is 200 
+[2021-09-30 14:00:24.841690] INFO: LOGINFO: response.status_code：200
+[2021-09-30 14:00:24.841690] INFO: LOGINFO: http://192.168.10.99:7070/admin/userAction_updateUser.action: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '修改成功！', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-09-30 14:00:24.841690] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-09-30 14:00:24.841690] INFO: LOGINFO:  body_msg is 1 
+[2021-09-30 14:00:24.841690] INFO: LOGINFO: 测试用例执行完毕
+[2021-09-30 14:00:24.848707] INFO: LOGINFO: *********TEST END*********

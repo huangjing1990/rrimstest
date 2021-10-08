@@ -1,0 +1,106 @@
+---
+company_interface:
+  dec: "公司管理"
+  addCompany:
+    # 添加公司
+    - url: /admin/companyAction_addCompany.action?companyInfo.locationPic=&companyInfo.doorPic=
+      data: {
+              "companyInfo.parentComId":"100006",
+              "companyInfo.legalPerson":"",
+              "companyInfo.provinceId":"42",
+              "companyInfo.comName":"python服务站",
+              "companyInfo.contactName":"",
+              "companyInfo.cityId":"420100000000",
+              "companyInfo.shortName":"",
+              "companyInfo.contactTel":"",
+              "companyInfo.areaId":"420111000000",
+              "companyInfo.levelname":"服务站",
+              "companyInfo.level":"3",
+              "companyInfo.address":"",
+              "companyInfo.streetId":"420111001000",
+              "companyInfo.enablingTime":"",
+              "companyInfo.creditAward":"",
+              "companyInfo.memo":""
+      }
+      header: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  findCompany:
+    # 查询公司
+    - url: /admin/companyAction_findCompanyByPage.action
+      data: {
+              "sort":"comId",
+              "order":"asc",
+              "comId":"0"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  editCompany:
+    # 编辑公司
+    - url: /admin/companyAction_editCompany.action?companyInfo.locationPic=&companyInfo.doorPic=
+      data: {
+
+              "companyInfo.parentComId":"100006",
+              "companyInfo.comId":"",
+              "companyInfo.legalPerson":"",
+              "companyInfo.provinceId":"42",
+              "companyInfo.comName":"编辑python服务站",
+              "companyInfo.contactName":"",
+              "companyInfo.cityId":"420100000000",
+              "companyInfo.shortName":"",
+              "companyInfo.contactTel":"",
+              "companyInfo.areaId":"420111000000",
+              "+":"",
+              "   ":"服务站",
+              "companyInfo.level":"3",
+              "companyInfo.address":"",
+              "companyInfo.streetId":"420111001000",
+              "companyInfo.state":"1",
+              "companyInfo.accountBalance":"-",
+              "companyInfo.enablingTime":"",
+              "companyInfo.creditAward":"",
+              "companyInfo.memo":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  disableCompany:
+    # 禁用公司
+    - url: /admin/companyAction_editCompany.action?companyInfo.locationPic=&companyInfo.doorPic=
+      data: {
+
+              "companyInfo.parentComId":"100006",
+              "companyInfo.comId":"",
+              "companyInfo.legalPerson":"",
+              "companyInfo.provinceId":"42",
+              "companyInfo.comName":"编辑python服务站",
+              "companyInfo.contactName":"",
+              "companyInfo.cityId":"420100000000",
+              "companyInfo.shortName":"",
+              "companyInfo.contactTel":"",
+              "companyInfo.areaId":"420111000000",
+              "+":"",
+              "   ":"服务站",
+              "companyInfo.level":"3",
+              "companyInfo.address":"",
+              "companyInfo.streetId":"420111001000",
+              "companyInfo.state":"0",
+              "companyInfo.accountBalance":"-",
+              "companyInfo.enablingTime":"",
+              "companyInfo.creditAward":"",
+              "companyInfo.memo":""
+
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }

@@ -1,0 +1,20 @@
+---
+login_interface:
+  dec: "用户登录"
+  login:
+    # 用户登录
+    - url: /loginAction_login.action
+      data: {
+            "userName":"cqhj",
+            "passwordLocal":"cs2021",
+            "verifyCode":"",
+            "verify":"0",
+            "localVertifyCode":"",
+            "password":"DB1A8BD798EEA81B0BE3DCA1D0E2C309",
+            "loginFailedNum":"",
+            "searchCount":"0"
+      }
+      header: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
