@@ -1,4 +1,4 @@
-#test_add_classification
 test_company
 test_group
 test_user
+test_giftType

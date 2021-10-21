@@ -1,0 +1,68 @@
+---
+giftType_interface:
+  dec: "礼品类型设置"
+  addGiftType:
+    # 添加礼品类型
+    - url: /param/giftTypeAction_addGiftType.action
+      data: {
+              "giftTypeInfo.giftTypeName":"",
+              "giftTypeInfo.identifyCode":"1",
+              "giftTypeInfo.memo":""
+      }
+      header: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  findGiftType:
+    # 查询礼品类型
+    - url: /param/giftTypeAction_findGiftTypeByPage.action
+      data: {
+              "giftTypeInfo.searchName":"giftTypeName",
+              "giftTypeInfo.searchValue":"",
+              "page":"1",
+              "rows":"15",
+              "sort":"state",
+              "order":"desc"
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+  editGiftType:
+    # 编辑礼品类型
+    - url: /param/giftTypeAction_updateGiftType.action
+      data: {
+
+              "giftTypeName":"",
+              "giftTypeInfo.giftTypeId":"",
+              "giftTypeInfo.giftTypeName":"",
+              "giftTypeInfo.identifyCode":"1",
+              "giftTypeInfo.state":"1",
+              "giftTypeInfo.memo":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }
+
+
+  disableGiftType:
+    # 禁用礼品类型
+    - url: /param/giftTypeAction_updateGiftType.action
+      data: {
+
+              "giftTypeName":"",
+              "giftTypeInfo.giftTypeName":"",
+              "giftTypeInfo.giftTypeId":"",
+              "giftTypeInfo.identifyCode":"1",
+              "giftTypeInfo.state":"0",
+              "giftTypeInfo.memo":""
+
+      }
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+      }

@@ -1,0 +1,319 @@
+[2021-10-21 16:46:30.428571] INFO: LOGINFO: 日志路径; E:\svn\AutoRF\rrimstest\API_Automation\Log
+[2021-10-21 16:46:30.429060] INFO: LOGINFO: E:\svn\AutoRF\rrimstest\API_Automation\TestCase
+[2021-10-21 16:46:30.429562] INFO: LOGINFO: test_company.py
+[2021-10-21 16:46:30.567978] INFO: LOGINFO: <unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<test_company.TestCompany testMethod=test_0001_addcompany>, <test_company.TestCompany testMethod=test_0002_findcompany>, <test_company.TestCompany testMethod=test_0003_editcompany>, <test_company.TestCompany testMethod=test_0004_disablecompany>]>]>]>
+[2021-10-21 16:46:30.569172] INFO: LOGINFO: E:\svn\AutoRF\rrimstest\API_Automation\TestCase
+[2021-10-21 16:46:30.569172] INFO: LOGINFO: test_group.py
+[2021-10-21 16:46:30.571691] INFO: LOGINFO: <unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<test_group.TestGroup testMethod=test_0001_addgroup>, <test_group.TestGroup testMethod=test_0002_findgroup>, <test_group.TestGroup testMethod=test_0003_editgroupMenu>, <test_group.TestGroup testMethod=test_0004_editgroup>, <test_group.TestGroup testMethod=test_0005_disablegroup>]>]>]>
+[2021-10-21 16:46:30.571691] INFO: LOGINFO: E:\svn\AutoRF\rrimstest\API_Automation\TestCase
+[2021-10-21 16:46:30.572182] INFO: LOGINFO: test_user.py
+[2021-10-21 16:46:30.574187] INFO: LOGINFO: <unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<test_user.TestUser testMethod=test_0001_adduser>, <test_user.TestUser testMethod=test_0002_finduser>, <test_user.TestUser testMethod=test_0003_edituserHas>, <test_user.TestUser testMethod=test_0004_edituser>, <test_user.TestUser testMethod=test_0005_resetPassworduser>, <test_user.TestUser testMethod=test_0006_unLockuser>, <test_user.TestUser testMethod=test_0007_disableuser>]>]>]>
+[2021-10-21 16:46:30.574187] INFO: LOGINFO: E:\svn\AutoRF\rrimstest\API_Automation\TestCase
+[2021-10-21 16:46:30.574187] INFO: LOGINFO: test_giftType.py
+[2021-10-21 16:46:30.576193] INFO: LOGINFO: <unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<unittest.suite.TestSuite tests=[<test_giftType.TestGiftType testMethod=test_0001_addgiftType>, <test_giftType.TestGiftType testMethod=test_0002_findgiftType>, <test_giftType.TestGiftType testMethod=test_0003_editgiftType>, <test_giftType.TestGiftType testMethod=test_0004_disablegiftType>]>]>]>
+[2021-10-21 16:46:30.576193] INFO: LOGINFO: ********TEST START********
+[2021-10-21 16:46:30.577696] INFO: LOGINFO: 报告路径; E:\svn\AutoRF\rrimstest\API_Automation\report\report_20211021_164630.html
+[2021-10-21 16:46:30.579200] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/login_interface
+[2021-10-21 16:46:30.615844] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:30.615844] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/loginAction_login.action
+[2021-10-21 16:46:30.616346] INFO: LOGINFO: 请求入参：{'userName': 'cqhj', 'passwordLocal': 'cs2021', 'verifyCode': '', 'verify': '0', 'localVertifyCode': '', 'password': 'DB1A8BD798EEA81B0BE3DCA1D0E2C309', 'loginFailedNum': '', 'searchCount': '0'}
+[2021-10-21 16:46:30.616346] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:30.906243] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:30.906749] INFO: LOGINFO:  statusCode is 302 
+[2021-10-21 16:46:30.907250] INFO: LOGINFO: response.status_code：302
+[2021-10-21 16:46:30.907752] INFO: LOGINFO: http://192.168.10.99:7070/loginAction_login.action: 返回结果：
+[2021-10-21 16:46:30.908254] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:30.908792] INFO: LOGINFO:  statusCode is 302 
+[2021-10-21 16:46:30.909251] INFO: LOGINFO: 测试用例开始执行
+[2021-10-21 16:46:30.909752] INFO: LOGINFO: 当前模块 添加公司
+[2021-10-21 16:46:30.910256] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/company_interface
+[2021-10-21 16:46:30.955903] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:30.955903] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/companyAction_addCompany.action?companyInfo.locationPic=&companyInfo.doorPic=
+[2021-10-21 16:46:30.955903] INFO: LOGINFO: 请求入参：{'companyInfo.parentComId': '100006', 'companyInfo.legalPerson': '', 'companyInfo.provinceId': '42', 'companyInfo.comName': 'python服务站636', 'companyInfo.contactName': '', 'companyInfo.cityId': '420100000000', 'companyInfo.shortName': '', 'companyInfo.contactTel': '', 'companyInfo.areaId': '420111000000', 'companyInfo.levelname': '服务站', 'companyInfo.level': '3', 'companyInfo.address': '', 'companyInfo.streetId': '420111001000', 'companyInfo.enablingTime': '2021-10-21 16:46:30', 'companyInfo.creditAward': '', 'companyInfo.memo': ''}
+[2021-10-21 16:46:30.955903] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:31.113582] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:31.114100] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:31.114100] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:31.114576] INFO: LOGINFO: http://192.168.10.99:7070/admin/companyAction_addCompany.action?companyInfo.locationPic=&companyInfo.doorPic=: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-10-21 16:46:31.114576] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-10-21 16:46:31.114576] INFO: LOGINFO:  body_msg is 1 
+[2021-10-21 16:46:31.114576] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:31.114576] INFO: LOGINFO: 当前模块 查询公司
+[2021-10-21 16:46:31.115077] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/company_interface
+[2021-10-21 16:46:31.151676] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:31.151676] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/companyAction_findCompanyByPage.action
+[2021-10-21 16:46:31.151676] INFO: LOGINFO: 请求入参：{'sort': 'comId', 'order': 'asc', 'comId': '0'}
+[2021-10-21 16:46:31.151676] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:31.354059] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:31.354059] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:31.354059] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:31.355595] INFO: LOGINFO: 当前模块 验证response body中是否包含预期字符串
+[2021-10-21 16:46:31.356594] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:31.356594] INFO: LOGINFO: 当前模块 编辑公司
+[2021-10-21 16:46:31.357096] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/company_interface
+[2021-10-21 16:46:31.392690] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:31.392690] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/companyAction_editCompany.action?companyInfo.locationPic=&companyInfo.doorPic=
+[2021-10-21 16:46:31.393178] INFO: LOGINFO: 请求入参：{'companyInfo.parentComId': '100006', 'companyInfo.comId': 100194, 'companyInfo.legalPerson': '', 'companyInfo.provinceId': '42', 'companyInfo.comName': '编辑python服务站636', 'companyInfo.contactName': '', 'companyInfo.cityId': '420100000000', 'companyInfo.shortName': '', 'companyInfo.contactTel': '', 'companyInfo.areaId': '420111000000', '+': '', '   ': '服务站', 'companyInfo.level': '3', 'companyInfo.address': '', 'companyInfo.streetId': '420111001000', 'companyInfo.state': '1', 'companyInfo.accountBalance': '-', 'companyInfo.enablingTime': '2021-10-21 16:46:31', 'companyInfo.creditAward': '', 'companyInfo.memo': ''}
+[2021-10-21 16:46:31.393178] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:31.493380] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:31.493883] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:31.494385] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:31.494890] INFO: LOGINFO: http://192.168.10.99:7070/admin/companyAction_editCompany.action?companyInfo.locationPic=&companyInfo.doorPic=: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-10-21 16:46:31.495425] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-10-21 16:46:31.495927] INFO: LOGINFO:  body_msg is 1 
+[2021-10-21 16:46:31.496428] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:31.497391] INFO: LOGINFO: 当前模块 禁用公司
+[2021-10-21 16:46:31.497893] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/company_interface
+[2021-10-21 16:46:31.545544] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:31.545544] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/companyAction_editCompany.action?companyInfo.locationPic=&companyInfo.doorPic=
+[2021-10-21 16:46:31.545544] INFO: LOGINFO: 请求入参：{'companyInfo.parentComId': '100006', 'companyInfo.comId': 100194, 'companyInfo.legalPerson': '', 'companyInfo.provinceId': '42', 'companyInfo.comName': '编辑python服务站636', 'companyInfo.contactName': '', 'companyInfo.cityId': '420100000000', 'companyInfo.shortName': '', 'companyInfo.contactTel': '', 'companyInfo.areaId': '420111000000', '+': '', '   ': '服务站', 'companyInfo.level': '3', 'companyInfo.address': '', 'companyInfo.streetId': '420111001000', 'companyInfo.state': '0', 'companyInfo.accountBalance': '-', 'companyInfo.enablingTime': '2021-10-21 16:46:31', 'companyInfo.creditAward': '', 'companyInfo.memo': ''}
+[2021-10-21 16:46:31.545544] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:31.638882] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:31.639352] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:31.639352] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:31.639352] INFO: LOGINFO: http://192.168.10.99:7070/admin/companyAction_editCompany.action?companyInfo.locationPic=&companyInfo.doorPic=: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-10-21 16:46:31.639853] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-10-21 16:46:31.639853] INFO: LOGINFO:  body_msg is 1 
+[2021-10-21 16:46:31.639853] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:31.641858] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/login_interface
+[2021-10-21 16:46:31.678454] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:31.678454] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/loginAction_login.action
+[2021-10-21 16:46:31.678454] INFO: LOGINFO: 请求入参：{'userName': 'cqhj', 'passwordLocal': 'cs2021', 'verifyCode': '', 'verify': '0', 'localVertifyCode': '', 'password': 'DB1A8BD798EEA81B0BE3DCA1D0E2C309', 'loginFailedNum': '', 'searchCount': '0'}
+[2021-10-21 16:46:31.678454] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:31.903294] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:31.903294] INFO: LOGINFO:  statusCode is 302 
+[2021-10-21 16:46:31.903824] INFO: LOGINFO: response.status_code：302
+[2021-10-21 16:46:31.903824] INFO: LOGINFO: http://192.168.10.99:7070/loginAction_login.action: 返回结果：
+[2021-10-21 16:46:31.903824] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:31.904297] INFO: LOGINFO:  statusCode is 302 
+[2021-10-21 16:46:31.904297] INFO: LOGINFO: 测试用例开始执行
+[2021-10-21 16:46:31.904297] INFO: LOGINFO: 当前模块 添加用户组
+[2021-10-21 16:46:31.904297] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/group_interface
+[2021-10-21 16:46:31.945906] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:31.945906] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/groupAction_addGroup.action
+[2021-10-21 16:46:31.946408] INFO: LOGINFO: 请求入参：{'groupInfo.groupName': 'python用户组942'}
+[2021-10-21 16:46:31.946408] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:31.993304] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:31.993806] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:31.993806] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:31.993806] INFO: LOGINFO: http://192.168.10.99:7070/admin/groupAction_addGroup.action: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-10-21 16:46:31.993806] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-10-21 16:46:31.994307] INFO: LOGINFO:  body_msg is 1 
+[2021-10-21 16:46:31.994307] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:31.994307] INFO: LOGINFO: 当前模块 查询用户组
+[2021-10-21 16:46:31.994307] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/group_interface
+[2021-10-21 16:46:32.037423] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:32.037924] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/groupAction_findGroupByPage.action
+[2021-10-21 16:46:32.037924] INFO: LOGINFO: 请求入参：{'groupInfo.searchName': 'groupName', 'groupInfo.searchValue': 'python用户组942', 'page': '1', 'rows': '15', 'sort': 'groupId', 'order': 'asc'}
+[2021-10-21 16:46:32.037924] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:32.085100] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:32.085578] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:32.085578] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:32.085578] INFO: LOGINFO: http://192.168.10.99:7070/admin/groupAction_findGroupByPage.action: 返回结果：{'footer': None, 'rows': [{'groupName': 'python用户组942', 'groupId': '89', 'groupIdSort': '89', 'state': 1}], 'total': 1}
+[2021-10-21 16:46:32.085578] INFO: LOGINFO: 当前模块 验证response body中是否包含预期字符串
+[2021-10-21 16:46:32.086074] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:32.086074] INFO: LOGINFO: 当前模块 用户组授权
+[2021-10-21 16:46:32.086074] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/group_interface
+[2021-10-21 16:46:32.125154] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:32.125656] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/groupAction_updateGroupMenu.action
+[2021-10-21 16:46:32.125656] INFO: LOGINFO: 请求入参：{'groupInfo.groupId': '89', 'groupInfo.menuPermissions': '120000_query,120011_query'}
+[2021-10-21 16:46:32.125656] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:32.176967] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:32.177467] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:32.177467] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:32.177969] INFO: LOGINFO: http://192.168.10.99:7070/admin/groupAction_updateGroupMenu.action: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-10-21 16:46:32.178474] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-10-21 16:46:32.178474] INFO: LOGINFO:  body_msg is 1 
+[2021-10-21 16:46:32.178474] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:32.178971] INFO: LOGINFO: 当前模块 编辑用户组
+[2021-10-21 16:46:32.178971] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/group_interface
+[2021-10-21 16:46:32.215096] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:32.215598] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/groupAction_updateGroup.action
+[2021-10-21 16:46:32.215598] INFO: LOGINFO: 请求入参：{'groupInfo.groupId': '89', 'groupInfo.groupName': '编辑python用户组942', 'groupInfo.state': '1'}
+[2021-10-21 16:46:32.215598] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:32.264081] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:32.264541] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:32.265091] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:32.265592] INFO: LOGINFO: http://192.168.10.99:7070/admin/groupAction_updateGroup.action: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-10-21 16:46:32.265592] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-10-21 16:46:32.266085] INFO: LOGINFO:  body_msg is 1 
+[2021-10-21 16:46:32.266548] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:32.267049] INFO: LOGINFO: 当前模块 禁用用户组
+[2021-10-21 16:46:32.267549] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/group_interface
+[2021-10-21 16:46:32.323891] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:32.323891] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/groupAction_updateGroup.action
+[2021-10-21 16:46:32.324392] INFO: LOGINFO: 请求入参：{'groupInfo.groupId': '89', 'groupInfo.groupName': '编辑python用户组942', 'groupInfo.state': '0'}
+[2021-10-21 16:46:32.324392] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:32.366712] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:32.366712] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:32.367211] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:32.367211] INFO: LOGINFO: http://192.168.10.99:7070/admin/groupAction_updateGroup.action: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-10-21 16:46:32.367211] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-10-21 16:46:32.367211] INFO: LOGINFO:  body_msg is 1 
+[2021-10-21 16:46:32.367211] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:32.368745] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/login_interface
+[2021-10-21 16:46:32.402836] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:32.402836] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/loginAction_login.action
+[2021-10-21 16:46:32.402836] INFO: LOGINFO: 请求入参：{'userName': 'cqhj', 'passwordLocal': 'cs2021', 'verifyCode': '', 'verify': '0', 'localVertifyCode': '', 'password': 'DB1A8BD798EEA81B0BE3DCA1D0E2C309', 'loginFailedNum': '', 'searchCount': '0'}
+[2021-10-21 16:46:32.403336] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:32.670272] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:32.670778] INFO: LOGINFO:  statusCode is 302 
+[2021-10-21 16:46:32.670778] INFO: LOGINFO: response.status_code：302
+[2021-10-21 16:46:32.670778] INFO: LOGINFO: http://192.168.10.99:7070/loginAction_login.action: 返回结果：
+[2021-10-21 16:46:32.671275] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:32.671275] INFO: LOGINFO:  statusCode is 302 
+[2021-10-21 16:46:32.671275] INFO: LOGINFO: 测试用例开始执行
+[2021-10-21 16:46:32.671776] INFO: LOGINFO: 当前模块 添加用户
+[2021-10-21 16:46:32.671776] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/user_interface
+[2021-10-21 16:46:32.710379] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:32.710379] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/userAction_addUser.action
+[2021-10-21 16:46:32.710379] INFO: LOGINFO: 请求入参：{'userInfo.userId': 'python用户105', 'userInfo.userName': 'python站长', 'userInfo.sex': '0', 'userInfo.comId': '100006', 'userInfo.tel': '', 'userInfo.email': ''}
+[2021-10-21 16:46:32.710379] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:32.869454] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:32.869454] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:32.869454] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:32.869957] INFO: LOGINFO: http://192.168.10.99:7070/admin/userAction_addUser.action: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-10-21 16:46:32.869957] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-10-21 16:46:32.869957] INFO: LOGINFO:  body_msg is 1 
+[2021-10-21 16:46:32.869957] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:32.870456] INFO: LOGINFO: 当前模块 查询用户
+[2021-10-21 16:46:32.870456] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/user_interface
+[2021-10-21 16:46:32.908527] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:32.908527] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/userAction_findUserByPage.action
+[2021-10-21 16:46:32.908527] INFO: LOGINFO: 请求入参：{'userInfo.searchName': 'userName', 'userInfo.searchValue': 'python站长', 'userInfo.state': '1', 'page': '1', 'rows': '15', 'sort': 'userId', 'order': 'asc'}
+[2021-10-21 16:46:32.908527] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:33.079501] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:33.079501] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:33.079501] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:33.079977] INFO: LOGINFO: http://192.168.10.99:7070/admin/userAction_findUserByPage.action: 返回结果：{'footer': None, 'rows': [{'failedNum': 0, 'sex': '0', 'tel': None, 'state': 1, 'comId': 100006, 'comName': '再生资源重庆公司', 'userName': 'python站长', 'userId': 'python用户105', 'roleNames': '', 'email': None}], 'total': 1}
+[2021-10-21 16:46:33.079977] INFO: LOGINFO: 当前模块 验证response body中是否包含预期字符串
+[2021-10-21 16:46:33.079977] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:33.079977] INFO: LOGINFO: 当前模块 用户授权
+[2021-10-21 16:46:33.080503] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/user_interface
+[2021-10-21 16:46:33.115070] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:33.115070] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/userAction_updateUserHasGroup.action
+[2021-10-21 16:46:33.115070] INFO: LOGINFO: 请求入参：{'userInfo.userId': 'python用户105', 'userInfo.groupIds': '15,10'}
+[2021-10-21 16:46:33.115070] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:33.269693] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:33.269693] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:33.269693] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:33.269693] INFO: LOGINFO: http://192.168.10.99:7070/admin/userAction_updateUserHasGroup.action: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-10-21 16:46:33.270195] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-10-21 16:46:33.270195] INFO: LOGINFO:  body_msg is 1 
+[2021-10-21 16:46:33.270195] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:33.270195] INFO: LOGINFO: 当前模块 编辑用户
+[2021-10-21 16:46:33.270195] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/user_interface
+[2021-10-21 16:46:33.305819] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:33.305819] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/userAction_updateUser.action
+[2021-10-21 16:46:33.305819] INFO: LOGINFO: 请求入参：{'userInfo.userId': 'python用户105', 'userInfo.userName': '编辑python站长', 'userInfo.sex': '0', 'userInfo.comId': '100006', 'userInfo.tel': '', 'userInfo.email': '', 'userInfo.state': '1'}
+[2021-10-21 16:46:33.306320] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:33.479752] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:33.479752] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:33.479752] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:33.480253] INFO: LOGINFO: http://192.168.10.99:7070/admin/userAction_updateUser.action: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '修改成功！', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-10-21 16:46:33.480253] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-10-21 16:46:33.480253] INFO: LOGINFO:  body_msg is 1 
+[2021-10-21 16:46:33.480755] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:33.480755] INFO: LOGINFO: 当前模块 用户重置密码
+[2021-10-21 16:46:33.480755] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/user_interface
+[2021-10-21 16:46:33.514845] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:33.515346] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/userAction_resetPassword.action?userInfo.userId=
+[2021-10-21 16:46:33.515346] INFO: LOGINFO: 请求入参：{'userInfo.userId': 'python用户105'}
+[2021-10-21 16:46:33.515346] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:33.559973] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:33.560467] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:33.560467] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:33.560467] INFO: LOGINFO: http://192.168.10.99:7070/admin/userAction_resetPassword.action?userInfo.userId=: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-10-21 16:46:33.560968] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-10-21 16:46:33.560968] INFO: LOGINFO:  body_msg is 1 
+[2021-10-21 16:46:33.560968] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:33.561484] INFO: LOGINFO: 当前模块 用户解锁
+[2021-10-21 16:46:33.561484] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/user_interface
+[2021-10-21 16:46:33.596562] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:33.596562] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/userAction_unLockUser.action?userInfo.userId=
+[2021-10-21 16:46:33.596562] INFO: LOGINFO: 请求入参：{'userInfo.userId': 'python用户105'}
+[2021-10-21 16:46:33.597064] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:33.640943] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:33.641895] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:33.641895] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:33.642401] INFO: LOGINFO: http://192.168.10.99:7070/admin/userAction_unLockUser.action?userInfo.userId=: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-10-21 16:46:33.643402] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-10-21 16:46:33.643902] INFO: LOGINFO:  body_msg is 1 
+[2021-10-21 16:46:33.644404] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:33.644905] INFO: LOGINFO: 当前模块 禁用用户
+[2021-10-21 16:46:33.645406] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/user_interface
+[2021-10-21 16:46:33.690051] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:33.690051] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/admin/userAction_updateUser.action
+[2021-10-21 16:46:33.690051] INFO: LOGINFO: 请求入参：{'userInfo.userId': 'python用户105', 'userInfo.userName': '编辑python站长', 'userInfo.sex': '0', 'userInfo.comId': '100006', 'userInfo.tel': '', 'userInfo.email': '', 'userInfo.state': '0'}
+[2021-10-21 16:46:33.690553] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:33.835589] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:33.836087] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:33.836087] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:33.836592] INFO: LOGINFO: http://192.168.10.99:7070/admin/userAction_updateUser.action: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '修改成功！', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-10-21 16:46:33.837128] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-10-21 16:46:33.837630] INFO: LOGINFO:  body_msg is 1 
+[2021-10-21 16:46:33.838130] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:33.843104] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/login_interface
+[2021-10-21 16:46:33.886217] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:33.886719] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/loginAction_login.action
+[2021-10-21 16:46:33.886719] INFO: LOGINFO: 请求入参：{'userName': 'cqhj', 'passwordLocal': 'cs2021', 'verifyCode': '', 'verify': '0', 'localVertifyCode': '', 'password': 'DB1A8BD798EEA81B0BE3DCA1D0E2C309', 'loginFailedNum': '', 'searchCount': '0'}
+[2021-10-21 16:46:33.886719] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:34.153813] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:34.154312] INFO: LOGINFO:  statusCode is 302 
+[2021-10-21 16:46:34.154312] INFO: LOGINFO: response.status_code：302
+[2021-10-21 16:46:34.154312] INFO: LOGINFO: http://192.168.10.99:7070/loginAction_login.action: 返回结果：
+[2021-10-21 16:46:34.154813] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:34.154813] INFO: LOGINFO:  statusCode is 302 
+[2021-10-21 16:46:34.155313] INFO: LOGINFO: 测试用例开始执行
+[2021-10-21 16:46:34.155313] INFO: LOGINFO: 当前模块 添加礼品类型
+[2021-10-21 16:46:34.155313] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/giftType_interface
+[2021-10-21 16:46:34.194383] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:34.194885] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/param/giftTypeAction_addGiftType.action
+[2021-10-21 16:46:34.194885] INFO: LOGINFO: 请求入参：{'giftTypeInfo.giftTypeName': 'python礼品类型819', 'giftTypeInfo.identifyCode': '1', 'giftTypeInfo.memo': ''}
+[2021-10-21 16:46:34.194885] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:34.245939] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:34.246410] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:34.246410] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:34.246911] INFO: LOGINFO: http://192.168.10.99:7070/param/giftTypeAction_addGiftType.action: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-10-21 16:46:34.247424] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-10-21 16:46:34.247424] INFO: LOGINFO:  body_msg is 1 
+[2021-10-21 16:46:34.247911] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:34.248411] INFO: LOGINFO: 当前模块 查询礼品类型
+[2021-10-21 16:46:34.248913] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/giftType_interface
+[2021-10-21 16:46:34.292026] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:34.292527] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/param/giftTypeAction_findGiftTypeByPage.action
+[2021-10-21 16:46:34.292527] INFO: LOGINFO: 请求入参：{'giftTypeInfo.searchName': 'giftTypeName', 'giftTypeInfo.searchValue': 'python礼品类型819', 'page': '1', 'rows': '15', 'sort': 'state', 'order': 'desc'}
+[2021-10-21 16:46:34.292527] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:34.342512] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:34.342512] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:34.342512] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:34.343013] INFO: LOGINFO: http://192.168.10.99:7070/param/giftTypeAction_findGiftTypeByPage.action: 返回结果：{'footer': None, 'rows': [{'giftTypeName': 'python礼品类型819', 'giftTypeId': 181, 'memo': None, 'identifyCode': '1', 'state': '1'}], 'total': 1}
+[2021-10-21 16:46:34.343013] INFO: LOGINFO: 当前模块 验证response body中是否包含预期字符串
+[2021-10-21 16:46:34.343013] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:34.343013] INFO: LOGINFO: 当前模块 编辑礼品类型
+[2021-10-21 16:46:34.343514] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/giftType_interface
+[2021-10-21 16:46:34.377079] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:34.377580] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/param/giftTypeAction_updateGiftType.action
+[2021-10-21 16:46:34.377580] INFO: LOGINFO: 请求入参：{'giftTypeName': 'python礼品类型819', 'giftTypeInfo.giftTypeId': 181, 'giftTypeInfo.giftTypeName': '编python礼品类型819', 'giftTypeInfo.identifyCode': '1', 'giftTypeInfo.state': '1', 'giftTypeInfo.memo': ''}
+[2021-10-21 16:46:34.377580] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:34.429719] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:34.429719] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:34.429719] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:34.429719] INFO: LOGINFO: http://192.168.10.99:7070/param/giftTypeAction_updateGiftType.action: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-10-21 16:46:34.430221] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-10-21 16:46:34.430221] INFO: LOGINFO:  body_msg is 1 
+[2021-10-21 16:46:34.430221] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:34.430221] INFO: LOGINFO: 当前模块 禁用礼品类型
+[2021-10-21 16:46:34.430722] INFO: LOGINFO: 解析yaml, Path:E:\svn\AutoRF\rrimstest\API_Automation/Params/Param/giftType_interface
+[2021-10-21 16:46:34.465815] INFO: LOGINFO: 当前模块 post_request
+[2021-10-21 16:46:34.466316] INFO: LOGINFO: 请求地址：http://192.168.10.99:7070/param/giftTypeAction_updateGiftType.action
+[2021-10-21 16:46:34.466316] INFO: LOGINFO: 请求入参：{'giftTypeName': '编python礼品类型819', 'giftTypeInfo.giftTypeName': '编python礼品类型819', 'giftTypeInfo.giftTypeId': 181, 'giftTypeInfo.identifyCode': '1', 'giftTypeInfo.state': '0', 'giftTypeInfo.memo': ''}
+[2021-10-21 16:46:34.466316] INFO: LOGINFO: 请求header：{'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'}
+[2021-10-21 16:46:34.512557] INFO: LOGINFO: 当前模块 状态码断言
+[2021-10-21 16:46:34.512557] INFO: LOGINFO:  statusCode is 200 
+[2021-10-21 16:46:34.512557] INFO: LOGINFO: response.status_code：200
+[2021-10-21 16:46:34.513057] INFO: LOGINFO: http://192.168.10.99:7070/param/giftTypeAction_updateGiftType.action: 返回结果：{'errorCode': '', 'errorType': '', 'msg': '', 'resultCode': 1, 'resultJson': '', 'resultJsonArr': None}
+[2021-10-21 16:46:34.513057] INFO: LOGINFO: 当前模块 验证response body中任意属性的值
+[2021-10-21 16:46:34.513057] INFO: LOGINFO:  body_msg is 1 
+[2021-10-21 16:46:34.513057] INFO: LOGINFO: 测试用例执行完毕
+[2021-10-21 16:46:34.521579] INFO: LOGINFO: *********TEST END*********

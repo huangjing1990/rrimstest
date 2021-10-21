@@ -71,19 +71,19 @@ class TestUser(unittest.TestCase):
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
 
     @logger("用户重置密码")
-    def test_editresetPassworduser(self):
+    def test_resetPassworduser(self):
         """
             用户管理：用户重置密码
         """
-        response = self.user.edit_user(self.req_url, self.g["Cookie"], self.g["userId"], self.g["userName"])
+        response = self.user.resetPassword_user(self.req_url, self.g["Cookie"], self.g["userId"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
 
     @logger("用户解锁")
-    def test_editunLockuser(self):
+    def test_unLockuser(self):
         """
             用户管理：用户解锁
         """
-        response = self.user.edit_user(self.req_url, self.g["Cookie"], self.g["userId"], self.g["userName"])
+        response = self.user.unLock_user(self.req_url, self.g["Cookie"], self.g["userId"])
         assert self.initEvn.test.assert_body(response['body'], 'resultCode', 1)
 
     @logger("禁用用户")

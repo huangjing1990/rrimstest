@@ -56,25 +56,23 @@ class User_interface():
 
         return response
 
-    def resetPass_worduser(self, domain, cookie, userId, userName):
+    def resetPassword_user(self, domain, cookie, userId):
         url, data, header = request_data("user_interface", "resetPasswordUser")
 
         apiUrl = domain + url
 
         data["userInfo.userId"] = userId
-        data["userInfo.userName"] = userName
 
         response = self.request.post_request(apiUrl, data, header, cookie)
 
         return response
 
-    def unLock_worduser(self, domain, cookie, userId, userName):
+    def unLock_user(self, domain, cookie, userId):
         url, data, header = request_data("user_interface", "unLockUser")
 
         apiUrl = domain + url
 
         data["userInfo.userId"] = userId
-        data["userInfo.userName"] = userName
 
         response = self.request.post_request(apiUrl, data, header, cookie)
 
